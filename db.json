@@ -1,18 +1,6 @@
 {
   "motor": [
     {
-      "id": 1,
-      "model": 2018,
-      "price": 100,
-      "refer": "A"
-    },
-    {
-      "id": 2,
-      "model": 2018,
-      "price": 1100,
-      "refer": "B"
-    },
-    {
       "id": 3,
       "model": 2019,
       "price": 110,
@@ -24,24 +12,9 @@
       "id": 4
     },
     {
-      "refer": "se",
-      "model": "sww",
-      "id": 5
-    },
-    {
-      "refer": "",
-      "model": "",
-      "id": 6
-    },
-    {
-      "refer": "",
-      "model": "",
-      "id": 7
-    },
-    {
-      "refer": "",
-      "model": "",
-      "id": 8
+      "refer": "osm",
+      "model": "osm",
+      "id": 9
     }
   ]
 }

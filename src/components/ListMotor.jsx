@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import CardMotor from './CardMotor'
+import CardMotor from '../components/CardMotor';
 
 const ListMotor = () => {
 const URL = "http://localhost:3500/motor"
