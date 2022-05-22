@@ -7,6 +7,7 @@ const NavBar = () => {
     <Navbar bg="dark" variant="dark">
     <Container>
     <Link to="/">Home</Link>
+    <Link to="/new">New Motor</Link>
     </Container>
   </Navbar>
    
