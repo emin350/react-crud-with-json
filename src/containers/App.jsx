@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar';
 import Home from "../components/Home"
 import NewMotor from './NewMotor';
 
+
 const Router = () => {
     return (
         <div>
@@ -11,6 +12,7 @@ const Router = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/new" element={<NewMotor/>} />
+        
             </Routes>
         </div>
     )

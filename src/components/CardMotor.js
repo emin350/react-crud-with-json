@@ -2,17 +2,24 @@ import axios from 'axios'
 import React from 'react'
 import { Card,Container, ListGroup, ListGroupItem, button} from 'react-bootstrap'
 
-function CardMotor({motorbike}) {
 
-  const URL = "http://localhost:3500/motor"
+function CardMotor({motorbike,updateList,setUpdateList,handleClose,handleShow,setDataModal}) {
+  
+const URL = "http://localhost:3500/motor"
 
 const handleDelete = async () => {
 const response = await axios.delete(`${URL}/${motorbike.id}`)
-console.log(response)
+setUpdateList(!updateList)
+}
+
+const handleEdit = () => {
+handleClose();
+handleShow();
+setDataModal(motorbike)
 }
 
 
-  return (
+return (
    <Container>
 <Card>
 <Card.Body>
@@ -21,7 +28,7 @@ console.log(response)
     <ListGroupItem>{motorbike.model}</ListGroupItem>
     
 </ListGroup>
-<button className="btn btn-primary me-2" >Edit</button>
+<button className="btn btn-primary me-2" onClick={handleEdit}>Edit</button>
 <button className="btn btn-danger me-2" onClick={handleDelete} >Delete</button>
 </Card.Body>
 </Card>
