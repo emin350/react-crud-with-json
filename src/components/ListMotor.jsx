@@ -21,8 +21,6 @@ const ListMotor = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  //const [dataForm, setDataForm] = useState({ refer: "", model: "" });
-
   const handleChangeModal = ({ target }) => {
 
     setDataModal({
